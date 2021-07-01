@@ -43,7 +43,7 @@ class Blockchain {
   }
   addNewBlock(newBlock) {
     newBlock.precedingHash = this.obtainLatestBlock().hash;
-    //newBlock.hash = newBlock.computeHash();
+    //newBlock.hash = newBlock.computeHash(); --
     newBlock.proofOfWork(this.difficulty);
     this.blockchain.push(newBlock);
   }
@@ -66,7 +66,7 @@ let newBlockchain = new Blockchain();
 
 newBlockchain.addNewBlock(
     new Block(1, "26/09/2020", {
-      sender: "Néstor Campos",
+      sender: "Nï¿½stor Campos",
       recipient: "Rosa Smith",
       quantity: 50
     })
